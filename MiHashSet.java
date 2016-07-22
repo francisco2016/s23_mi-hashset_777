@@ -83,14 +83,47 @@ public class MiHashSet
                     cadena += "[" +num.get(i)+ "]";
                 }
             }
-            System.out.println(cadena );
         }
         else{
             System.out.println("Conjunto sin elementos." );
         }
         return cadena;
     } 
+    
+    /**
+     * devuelve verdadero si el parámetro es igual al conjunto sobre el que se invoca y falso en otro caso.
+     */
+    public boolean equals(MiHashSet otroConjunto){
+        boolean parametroIgual = true;
+        if(otroConjunto.size() == num.size()){
+            int index = 0;
+            while(index < num.size() && parametroIgual){
+                if( !(otroConjunto.contains(num.get(index))) ){
+                    parametroIgual = false;
+                }
+            }
+            index ++;
+        }
+        else{
+            parametroIgual = false;
+        }
+        return parametroIgual;
+    }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
