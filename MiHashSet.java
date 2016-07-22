@@ -27,7 +27,13 @@ public class MiHashSet
         }
         return estaba;
     }
-
+    
+    /**
+     *  vacía el conjunto.
+     */
+    public void clear(){
+        num.clear();
+    }
 }
 
 
