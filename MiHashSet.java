@@ -41,6 +41,14 @@ public class MiHashSet
     public boolean contains(int elemento){
         return num.contains(elemento);
     }
+    
+    /**
+     *  devuelve verdadero si el conjunto no contiene elementos.
+     */
+    public boolean isEmpty(){
+        return num.isEmpty();
+    }
+    
 }
 
 
