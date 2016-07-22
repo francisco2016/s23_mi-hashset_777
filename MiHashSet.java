@@ -49,6 +49,18 @@ public class MiHashSet
         return num.isEmpty();
     }
     
+    /**
+     * elimina del conjunto el elemento dado. Si no existiera devuelve falso; si existía en el conjunto devuelve verdadero.
+     */
+    public boolean remove(int elemento){
+        boolean existe = false;
+        int sol = num.indexOf(elemento);
+        if(num.indexOf(elemento) != -1){
+            existe = true;
+            num.remove(sol);
+        }
+        return existe;
+    }
 }
 
 
